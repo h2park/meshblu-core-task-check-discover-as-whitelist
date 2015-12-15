@@ -1,13 +1,13 @@
 {
   "name": "meshblu-core-task-check-discoveras-whitelist",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "meshblu-core-manager-whitelist": "^1.2.0"
+    "meshblu-core-manager-whitelist": "^1.2.1"
   },
   "devDependencies": {
     "chai": "^3.4.1",
