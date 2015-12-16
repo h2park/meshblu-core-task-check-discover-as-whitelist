@@ -7,7 +7,8 @@ class VerifyDiscoverAsWhitelist
     @whitelistManager ?= new WhitelistManager {datastore, uuidAliasResolver}
 
   do: (job, callback) =>
-    {auth, fromUuid, responseId} = job.metadata    
+    {auth, fromUuid, responseId} = job.metadata
+    fromUuid ?= auth.uuid  
     @whitelistManager.canDiscoverAs fromUuid, auth.uuid, (error, canDiscoverAs) =>
       return @sendResponse responseId, 500, callback if error?
       return @sendResponse responseId, 403, callback unless canDiscoverAs
