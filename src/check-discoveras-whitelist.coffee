@@ -8,8 +8,8 @@ class VerifyDiscoverAsWhitelist
 
   do: (job, callback) =>
     {auth, fromUuid, responseId} = job.metadata
-    fromUuid ?= auth.uuid  
-    @whitelistManager.canDiscoverAs fromUuid, auth.uuid, (error, canDiscoverAs) =>
+    fromUuid ?= auth.uuid
+    @whitelistManager.canDiscoverAs toUuid: fromUuid, fromUuid: auth.uuid, (error, canDiscoverAs) =>
       return @sendResponse responseId, 500, callback if error?
       return @sendResponse responseId, 403, callback unless canDiscoverAs
       @sendResponse responseId, 204, callback

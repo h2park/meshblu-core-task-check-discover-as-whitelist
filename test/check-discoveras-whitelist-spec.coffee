@@ -45,7 +45,7 @@ describe 'CheckDiscoverAsWhitelist', ->
         @sut.do job, (error, @newJob) => done error
 
       it 'should get have the responseId', ->
-        expect(@whitelistManager.canDiscoverAs).to.have.been.calledWith 'green-blue', 'green-blue'
+        expect(@whitelistManager.canDiscoverAs).to.have.been.calledWith toUuid: 'green-blue', fromUuid: 'green-blue'
 
     describe 'when called with a different valid job', ->
       beforeEach (done) ->
