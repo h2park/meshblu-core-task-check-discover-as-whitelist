@@ -1,6 +1,6 @@
 {
   "name": "meshblu-core-task-check-discover-as-whitelist",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "",
   "main": "index.js",
   "directories": {
