@@ -1,2 +1,2 @@
 require('coffee-script/register');
-module.exports = require('./src/check-discoveras-whitelist');
+module.exports = require('./src/check-whitelist');

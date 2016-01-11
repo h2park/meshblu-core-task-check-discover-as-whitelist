@@ -1,12 +1,12 @@
 http = require 'http'
-CheckDiscoverAsWhitelist = require '../src/check-discoveras-whitelist'
+CheckAsWhitelist = require '../src/check-as-whitelist'
 
-describe 'CheckDiscoverAsWhitelist', ->
+describe 'CheckAsWhitelist', ->
   beforeEach ->
     @whitelistManager =
       canDiscoverAs: sinon.stub()
 
-    @sut = new CheckDiscoverAsWhitelist
+    @sut = new CheckAsWhitelist
       whitelistManager: @whitelistManager
 
   describe '->do', ->
