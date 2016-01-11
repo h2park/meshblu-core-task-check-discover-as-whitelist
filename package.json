@@ -1,6 +1,6 @@
 {
-  "name": "meshblu-core-task-check-discoveras-whitelist",
-  "version": "3.0.2",
+  "name": "meshblu-core-task-check-discover-as-whitelist",
+  "version": "3.0.3",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/octoblu/meshblu-core-task-check-discoveras-whitelist.git"
+    "url": "git+https://github.com/octoblu/meshblu-core-task-check-discover-as-whitelist.git"
   },
   "keywords": [
     "meshblu",
@@ -33,7 +33,7 @@
   "author": "serveradmin@octoblu.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/octoblu/meshblu-core-task-check-discoveras-whitelist/issues"
+    "url": "https://github.com/octoblu/meshblu-core-task-check-discover-as-whitelist/issues"
   },
-  "homepage": "https://github.com/octoblu/meshblu-core-task-check-discoveras-whitelist#readme"
+  "homepage": "https://github.com/octoblu/meshblu-core-task-check-discover-as-whitelist#readme"
 }
